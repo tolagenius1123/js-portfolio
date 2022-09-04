@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Merriweather:wght@300;400&family=Mingzat&family=Montserrat:ital,wght@0,400;1,500&family=Poppins&family=Raleway&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cabcff8eb9.js" crossorigin="anonymous"></script>
+    <title>Js-Portfolio</title>
+</head>
+<body>
+    <!-- ---- HEADER ---- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2> <span>O</span>J</h2>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi! I'm <span>Omotola</span> Jinadu <br></h1>
+                <p>A Frontend Developer who is passionate about learning and building beautiful responsive websites and applications.</p>
+                <a href="#contact">Let's Connect</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------ABOUT------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/work.jpg" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="my-background">My name is Jinadu Omotola, a frontend developer based in Lagos, Nigeria.
+                        I'm a graduate from a Software Engineering Bootcamp in Lagos (Semicolon Africa).
+                        During the 9 months of intensive training, I was introduced to Design & Critical thinking, Industrial design and
+                        Software programming with Java, Python and JavaScript.
+                        I also learnt frameworks and general programming concepts.
+                        I majored in frontend engineering and I’ve built various projects with the react framework.
+                    </p>
+                    <div class="tab-titles">
+                        <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Building websites with React</li>
+                            <li><span>App Development</span><br>Building Android Apps</li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Designing Web Interfaces</li>
+                            <li><span>2020 - 2021</span><br>Building websites with React</li>
+                            <li><span>2019 - 2020</span><br>Building Android Apps</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Feb 2022 - Oct 2022</span><br>Software Engineer Trainee @Semicolon Africa</li>
+                            <li><span>Apr 2021 - Jan 2022</span><br>Order Fulfillment/Invoicing Officer @CAP Plc</li>
+                            <li><span>Dec 2015 - Dec 2019</span><br>Geography Undergraduate @University of Lagos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------SERVICES------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <img src="images/html.png" alt="">
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>HTML</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p> -->
+                    <!-- <a href="/">Learn more</a> -->
+                </div>     
+                <div>
+                    <img src="images/css.png" alt="">
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>CSS</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p> -->
+                    <!-- <a href="/">Learn more</a> -->
+                </div>     
+                <div>
+                    <img src="images/javascript.png" alt="">
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>JavaScript</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p> -->
+                    <!-- <a href="/">Learn more</a> -->
+                </div>     
+                <div>
+                    <img src="images/react.png" alt="">
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>React</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p> -->
+                    <!-- <a href="/">Learn more</a> -->
+                </div>     
+                <div>
+                    <img src="images/node.png" alt="">
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>Node.JS</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p> -->
+                    <!-- <a href="/">Learn more</a> -->
+                </div>     
+                <div>
+                    <img src="images/mongo.png" alt="">
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>Mongo DB</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p> -->
+                    <!-- <a href="/">Learn more</a> -->
+                </div>     
+                <div>
+                    <img src="images/github.png" alt="">
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>GitHub</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p> -->
+                    <!-- <a href="/">Learn more</a> -->
+                </div>     
+                <!-- <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p>
+                    <a href="/">Learn more</a>
+                </div>     
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique eum consectetur, hic est ducimus nam. Illum beatae neque expedita, tenetur nulla reiciendis dicta. Explicabo corrupti repellat corporis perferendis facere!</p>
+                    <a href="/">Learn more</a>
+                </div>      -->
+            </div>
+        </div>
+    </div>
+
+    <!-- -------PORTFOLIO------- -->
+    <div id="portfolio"> 
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/quote.PNG" alt="work">
+                    <div class="layer">
+                        <h3>Random Quote Generator App</h3>
+                        <p>This app was built with react, it has features like text to speech and ability to post quote on your twitter page.</p>
+                        <a href="https://tola-quote-generator.herokuapp.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todos.PNG" alt="work">
+                    <div class="layer">
+                        <h3>Todo App</h3>
+                        <p>This app was built with react, it has full crud functionality and uses local storage so your data persists.</p>
+                        <a href="https://tola-todo-app.herokuapp.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus odit eum maiores quam earum animi
+                            minus in illum facilis nesciunt provident ex blanditiis, ipsum atque enim nam tenetur est!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------CONTACT------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>09028272009</p>
+                    <div class="social-icons">
+                        <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="/"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="/"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="myForm" action="https://getform.io/f/27828bfa-3a4f-4346-a2e7-3c6ed00d2ad2" method="POST" >
+                    <!-- <form id="myForm" action="http://localhost:3500/users" method="POST" > -->
+                        <input type="text" name="name" placeholder="Fullname" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="6" placeholder="Your message..."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Omotola. Made with <i class="fa-solid fa-heart"></i> by OJ</p>
+        </div>
+    </div>
+
+
+    <script>
+        let tablinks = document.getElementsByClassName('tab-links');
+        let tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab (tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        let sideMenu = document.getElementById("sideMenu");
+
+        const openMenu = () => {
+            sideMenu.style.right = "0";
+        }
+
+        const closeMenu = () => {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+
+    </script>
+</body>
+</html>
