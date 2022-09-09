@@ -9,13 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Merriweather:wght@300;400&family=Mingzat&family=Montserrat:ital,wght@0,400;1,500&family=Poppins&family=Raleway&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cabcff8eb9.js" crossorigin="anonymous"></script>
-    <title>Js-Portfolio</title>
+    <title>Tola's Portfolio</title>
 </head>
 <body>
+    <nav class="nav">
+        <h2> <span>O</span>J</h2>
+        <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
     <!-- ---- HEADER ---- -->
     <div id="header">
-        <div class="container">
-            <nav>
+            <!-- <nav>
                 <h2> <span>O</span>J</h2>
                 <ul id="sideMenu">
                     <li><a href="#header">Home</a></li>
@@ -26,9 +37,23 @@
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
+            </nav> -->
+
+        <div class="container">
+            <!-- <nav>
+                <h2> <span>O</span>J</h2>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav> -->
             <div class="header-text">
-                <h1>Hi! I'm <span>Omotola</span> Jinadu <br></h1>
+                <h1>Hi! I'm <span class="auto-input"> <span>Omotola</span> Jinadu </span><br></h1>
                 <p>A Frontend Developer who is passionate about learning and building beautiful responsive websites and applications.</p>
                 <a href="#contact">Let's Connect</a>
             </div>
@@ -219,21 +244,21 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>09028272009</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>tolajinadu1123@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>08141366380</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/omotola-jinadu-693800205/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/tolagenius1123" target="_blank"><i class="fa-brands fa-github"></i></i></a>
                         <a href="https://twitter.com/Tee_switch1123" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
                     </div>
-                    <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/myCV.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form id="myForm" action="https://getform.io/f/27828bfa-3a4f-4346-a2e7-3c6ed00d2ad2" method="POST" >
                     <!-- <form id="myForm" action="http://localhost:3500/users" method="POST" > -->
-                        <input type="text" name="name" placeholder="Fullname" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" rows="6" placeholder="Your message..."></textarea>
+                        <input class="fullname" type="text" name="name" placeholder="Fullname" required>
+                        <input class="email" type="email" name="email" placeholder="Email" required>
+                        <textarea class="text" name="message" rows="6" placeholder="Your message..."></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
@@ -274,6 +299,33 @@
     </script>
 
     <script>
+        const nav = document.querySelector('.nav')
+        window.onscroll = function () {
+            let top = window.scrollY;
+            if (top >= 50) {
+                nav.classList.add('active')
+            }else{
+                nav.classList.remove('active')
+            }
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const typed = new Typed('.auto-input', {
+            strings: ["Omotola Jinadu"],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop:true
+        })
+
+    </script>
+    <script>
+        let btnReset = document.querySelector('.btn.btn2');
+        let input = document.querySelector('input');
+        btnReset.addEventListener('click', () => {
+            input.forEach(input => input.value = '');
+        })
 
     </script>
 </body>
