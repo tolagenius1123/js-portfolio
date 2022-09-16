@@ -363,7 +363,9 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #ff004f;
+    /* background: #ff004f; */
+    background: #4837ff;
+    border: none;
 }
 
 
@@ -404,6 +406,7 @@ nav ul li a:hover::after {
 .btn.btn2 {
     display: inline-block;
     background: #ff004f;
+    border: none;
 }
 
 .btn.btn2:hover {
